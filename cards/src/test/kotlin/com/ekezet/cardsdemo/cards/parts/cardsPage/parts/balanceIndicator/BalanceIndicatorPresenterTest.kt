@@ -1,6 +1,5 @@
-package com.ekezet.cardsdemo.cards.parts.cardsPage.parts.balanceIndicator;
+package com.ekezet.cardsdemo.cards.parts.cardsPage.parts.balanceIndicator
 
-import com.ekezet.base.utils.formatAsMoney
 import com.ekezet.cardsdemo.cards.R
 import com.ekezet.cardsdemo.cards.data.Card
 import com.ekezet.cardsdemo.cards.parts.cardsPage.parts.balanceIndicator.BalanceIndicatorSpec.Interactor
@@ -66,7 +65,6 @@ class BalanceIndicatorPresenterTest {
             view.toggleAlert(true)
         }
     }
-
 
     @Test fun `selected card with available balance`() {
         val card = mockk<Card> {

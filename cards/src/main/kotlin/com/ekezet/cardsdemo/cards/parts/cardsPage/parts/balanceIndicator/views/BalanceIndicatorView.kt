@@ -8,8 +8,8 @@ import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import com.ekezet.base.di.ActivityScope
 import com.ekezet.base.views.BaseView
 import com.ekezet.cardsdemo.cards.parts.cardsPage.parts.balanceIndicator.BalanceIndicatorSpec.View
-import kotlinx.android.synthetic.main.view_balance_indicator.view.*
 import javax.inject.Inject
+import kotlinx.android.synthetic.main.view_balance_indicator.view.*
 
 /**
  * @author kiri
