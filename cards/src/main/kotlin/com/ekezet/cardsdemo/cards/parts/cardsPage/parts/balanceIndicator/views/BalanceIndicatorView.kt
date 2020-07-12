@@ -1,6 +1,5 @@
 package com.ekezet.cardsdemo.cards.parts.cardsPage.parts.balanceIndicator.views
 
-import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
 import android.content.Context
 import android.view.animation.BounceInterpolator
@@ -9,8 +8,8 @@ import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import com.ekezet.base.di.ActivityScope
 import com.ekezet.base.views.BaseView
 import com.ekezet.cardsdemo.cards.parts.cardsPage.parts.balanceIndicator.BalanceIndicatorSpec.View
-import javax.inject.Inject
 import kotlinx.android.synthetic.main.view_balance_indicator.view.*
+import javax.inject.Inject
 
 /**
  * @author kiri
@@ -20,7 +19,10 @@ class BalanceIndicatorView @Inject constructor(context: Context) : BaseView(cont
     private val graphAnimator = ValueAnimator().apply {
         addUpdateListener { animator -> graphView.progress = animator.animatedValue as Float }
     }
-    private var alertAnimator: ValueAnimator? = null
+    private var alertAnimator = ValueAnimator().apply {
+        duration = ALPHA_ANIM_MILLIS
+        addUpdateListener { animator -> alertIconImage.alpha = animator.animatedValue as Float }
+    }
 
     override fun setBalanceText(text: CharSequence, textColorRes: Int) {
         balanceText.apply {
@@ -29,41 +31,30 @@ class BalanceIndicatorView @Inject constructor(context: Context) : BaseView(cont
         }
     }
 
-    override fun setBalanceRatio(ratio: Float, isFastAnimation: Boolean) {
+    override fun setBalanceRatio(ratio: Float, isFastAnimation: Boolean) = with(graphAnimator) {
         if (ratio.equals(graphView.progress)) {
-            return
+            return@with
         }
-        with(graphAnimator) {
-            if (isRunning) {
-                pause()
-            }
-            if (isFastAnimation) {
-                duration = BALANCE_ANIM_FAST_MILLIS
-                interpolator = FastOutLinearInInterpolator()
-            } else {
-                duration = BALANCE_ANIM_DEFAULT_MILLIS
-                interpolator = BounceInterpolator()
-            }
-            setFloatValues(graphView.progress, ratio)
-            if (isPaused) {
-                resume()
-            } else {
-                start()
-            }
+        if (isRunning) {
+            end()
         }
+        if (isFastAnimation) {
+            duration = BALANCE_ANIM_FAST_MILLIS
+            interpolator = FastOutLinearInInterpolator()
+        } else {
+            duration = BALANCE_ANIM_DEFAULT_MILLIS
+            interpolator = BounceInterpolator()
+        }
+        setFloatValues(graphView.progress, ratio)
+        start()
     }
 
-    override fun toggleAlert(show: Boolean) {
-        alertAnimator?.pause()
-        alertAnimator = if (show) {
-            ObjectAnimator.ofFloat(alertIconImage.alpha, 1F)
-        } else {
-            ObjectAnimator.ofFloat(alertIconImage.alpha, 0F)
-        }.apply {
-            duration = ALPHA_ANIM_MILLIS
-            addUpdateListener { animator -> alertIconImage.alpha = animator.animatedValue as Float }
+    override fun toggleAlert(show: Boolean) = with(alertAnimator) {
+        if (isRunning) {
+            end()
         }
-        alertAnimator?.start()
+        setFloatValues(alertIconImage.alpha, if (show) 1F else 0F)
+        start()
     }
 
     companion object {
