@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue">#FF377AA4</color>
+    <color name="status_blue">#FF004E7B</color>
+    <color name="secondary_blue">#FF539AC6</color>
+    <color name="secondary_blue_30">#4D539AC6</color>
+    <color name="dark_blue">#FF05293E</color>
+    <color name="error_red">#FFCE3760</color>
+    <color name="orange">#FFFFAD57</color>
+    <color name="orange_60">#99F77F00</color>
+    <color name="orange_20">#33F77F00</color>
+    <color name="grey">#FF999999</color>
+    <color name="alto">#FFDEDEDE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_text_blue">#FF44779E</color>
+
+    <color name="colorPrimary">@color/primary_blue</color>
+    <color name="colorPrimaryDark">@color/dark_blue</color>
+    <color name="colorPrimaryLight">@color/secondary_blue</color>
+    <color name="colorPrimaryLight_30">@color/secondary_blue_30</color>
+    <color name="colorAccent">@color/orange</color>
+    <color name="colorSecondary">@color/colorPrimary</color>
+    <color name="colorSecondaryLight">@color/colorPrimaryLight</color>
+    <color name="colorSecondaryDark">@color/colorPrimaryDark</color>
+</resources>

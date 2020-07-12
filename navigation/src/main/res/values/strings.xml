@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation__cards">Cards</string>
+    <string name="navigation__transactions">Transactions</string>
+    <string name="navigation__statements">Statements</string>
+    <string name="navigation__more">More</string>
+</resources>

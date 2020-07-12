@@ -1,0 +1,117 @@
+[ {
+    "cardId": "1",
+    "issuer": "Visa - Banca Monte Dei Paschi Di Siena S.P.A., Italy (Electron)",
+    "cardNumber": "4003-1565-5402-0882",
+    "expirationDate": "2021/12",
+    "cardHolderName": "Mr. Shea Wiza",
+    "friendlyName": "Personal Loan Account",
+    "currency": "BAM",
+    "cvv": "962",
+    "availableBalance": 5455.60,
+    "currentBalance": 44544.40,
+    "minPayment": 50.0,
+    "dueDate": "2018-09-01",
+    "reservations": 3688,
+    "balanceCarriedOverFromLastStatement": 856,
+    "spendingsSinceLastStatement": 3688,
+    "yourLastRepayment": "2018-09-26",
+    "accountDetails": {
+        "accountLimit": 65000,
+        "accountNumber": "01-558-9"
+    },
+    "status": "ACTIVE",
+    "cardImage": "1"
+}, {
+    "cardId": "2",
+    "issuer": "Visa - Banco Nacional Ultramarino, S.A., Macau (Platinum)",
+    "cardNumber": "4003-6326-3784-1064",
+    "expirationDate": "2021/10",
+    "cardHolderName": "Amaya Harber",
+    "friendlyName": "Home Loan Account",
+    "currency": "XOF",
+    "cvv": "837",
+    "availableBalance": 15000,
+    "currentBalance": 50000,
+    "minPayment": 0,
+    "dueDate": "2018.09.26.",
+    "reservations": 35000,
+    "balanceCarriedOverFromLastStatement": 15000,
+    "spendingsSinceLastStatement": 3500,
+    "yourLastRepayment": "2018-09-26",
+    "accountDetails": {
+        "accountLimit": 65000,
+        "accountNumber": "02-331-5"
+    },
+    "status": "ACTIVE",
+    "cardImage": "2"
+}, {
+    "cardId": "3",
+    "issuer": "MasterCard - First Usa Bank, USA.",
+    "cardNumber": "5315-7204-0721-2531",
+    "expirationDate": "2021/12",
+    "cardHolderName": "Zula Keebler",
+    "friendlyName": "Home Loan Account",
+    "currency": "AZN",
+    "cvv": "510",
+    "availableBalance": 78000,
+    "currentBalance": 13000,
+    "minPayment": 0,
+    "dueDate": "2018-09-26",
+    "reservations": 45000,
+    "yourLastRepayment": "2018-09-26",
+    "spendingsSinceLastStatement": 3500,
+    "balanceCarriedOverFromLastStatement": 15000,
+    "accountDetails": {
+        "accountLimit": 65000,
+        "accountNumber": "01-331-5"
+    },
+    "status": "BLOCKED",
+    "cardImage": "1"
+}, {
+    "cardId": "4",
+    "issuer": "Visa - The Hongkong And Shanghai Banking Corporation Ltd., Brunei (Classic)",
+    "cardNumber": "4002-1383-3064-6561",
+    "expirationDate": "2021/10",
+    "cardHolderName": "Dr. Margie Collier",
+    "friendlyName": "Auto Loan Account",
+    "currency": "SHP",
+    "cvv": "648",
+    "availableBalance": 0,
+    "currentBalance": 65000,
+    "minPayment": 0,
+    "dueDate": "2018-09-26",
+    "reservations": 45000,
+    "balanceCarriedOverFromLastStatement": 20000,
+    "spendingsSinceLastStatement": 45000,
+    "yourLastRepayment": "2018-09-26",
+    "accountDetails": {
+        "accountLimit": 65000,
+        "accountNumber": "01-500-1"
+    },
+    "status": "ACTIVE",
+    "cardImage": "3"
+}, {
+    "cardId": "5",
+    "issuer": "American Express Company, USA (Green)",
+    "cardNumber": "3712-0602-2431-4853",
+    "expirationDate": "2020/06",
+    "cardHolderName": "Mrs. Daniella Block",
+    "friendlyName": "Credit Card Account",
+    "currency": "TMT",
+    "cvv": "222",
+    "availableBalance": 0,
+    "currentBalance": 76000,
+    "minPayment": 0,
+    "dueDate": "2018.09.26.",
+    "reservations": 45000,
+    "balanceCarriedOverFromLastStatement": 20000,
+    "spendingsSinceLastStatement": 45000,
+    "yourLastRepayment": "2018-09-26",
+    "accountDetails": {
+        "accountLimit": 65000,
+        "accountNumber": "01-167-2"
+    },
+    "status": "BLOCKED",
+    "cardImage": "2"
+}
+]

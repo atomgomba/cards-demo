@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cardsPage__balanceInfo__available">Available</string>
+    <string name="cardsPage__balanceInfo__details_button">Details</string>
+    <string name="cardsPage__balanceInfo__current_balance">Current balance</string>
+    <string name="cardsPage__balanceInfo__min_payment">Min. payment</string>
+    <string name="cardsPage__balanceInfo__due_date">Due date</string>
+
+    <string name="transactionsPage__title">Details</string>
+    <string name="transactionsPage__detailedGraph__current_balance">Current balance</string>
+    <string name="transactionsPage__detailedGraph__available">Available</string>
+    <string name="transactionsPage__detailedGraph__reservations_pending">Reservations/Pending (sum)</string>
+    <string name="transactionsPage__balanceOverview_title">Balance overview</string>
+    <string name="transactionsPage__balanceOverview__carried_over">Balance carried over from last statement</string>
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- TODO: Use RecyclerView to show list items -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/balanceInfoContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/currentBalanceContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/row1LabelText"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing1x"
+                android:text="@string/cardsPage__balanceInfo__current_balance"
+                app:layout_constraintBottom_toBottomOf="@+id/currentBalanceText"
+                app:layout_constraintEnd_toStartOf="@id/currentBalanceCurrencyText"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/currentBalanceText"
+                />
+
+            <TextView
+                android:id="@+id/currentBalanceText"
+                style="@style/Text.Label.Strong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing2x"
+                android:gravity="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.25"
+                tools:text="44,544.40"
+                />
+
+            <TextView
+                android:id="@+id/currentBalanceCurrencyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing2x"
+                android:textColor="@color/grey"
+                app:layout_constraintBottom_toBottomOf="@+id/currentBalanceText"
+                app:layout_constraintEnd_toStartOf="@id/currentBalanceText"
+                app:layout_constraintTop_toTopOf="@id/currentBalanceText"
+                tools:text="USD"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spacing1x"
+                android:background="@color/alto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currentBalanceText"
+                app:layout_constraintVertical_bias="1"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/minPaymentContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/currentBalanceContainer"
+            >
+
+            <TextView
+                android:id="@+id/pendingLabelText"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing1x"
+                android:text="@string/cardsPage__balanceInfo__min_payment"
+                app:layout_constraintBottom_toBottomOf="@+id/minPaymentText"
+                app:layout_constraintEnd_toStartOf="@id/minPaymentCurrencyText"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/minPaymentText"
+                />
+
+            <TextView
+                android:id="@+id/minPaymentText"
+                style="@style/Text.Label.Strong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing2x"
+                android:gravity="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.25"
+                tools:text="44,544.40"
+                />
+
+            <TextView
+                android:id="@+id/minPaymentCurrencyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing2x"
+                android:textColor="@color/grey"
+                app:layout_constraintBottom_toBottomOf="@+id/minPaymentText"
+                app:layout_constraintEnd_toStartOf="@id/minPaymentText"
+                app:layout_constraintTop_toTopOf="@id/minPaymentText"
+                tools:text="USD"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spacing1x"
+                android:background="@color/alto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/minPaymentText"
+                app:layout_constraintVertical_bias="1"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dueDateContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/minPaymentContainer"
+            >
+
+            <TextView
+                android:id="@+id/row3LabelText"
+                style="@style/Text.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing1x"
+
+                android:text="@string/cardsPage__balanceInfo__due_date"
+                app:layout_constraintBottom_toBottomOf="@+id/dueDateText"
+                app:layout_constraintEnd_toStartOf="@id/dueDateText"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dueDateText"
+                />
+
+            <TextView
+                android:id="@+id/dueDateText"
+                style="@style/Text.Label.Strong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing2x"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="01.09.2018"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spacing1x"
+                android:background="@color/alto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dueDateText"
+                app:layout_constraintVertical_bias="1"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/detailsButton"
+        style="@style/Widget.Button.Outlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing4x"
+        android:text="@string/cardsPage__balanceInfo__details_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balanceInfoContainer"
+        app:layout_constraintWidth_percent="0.444"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

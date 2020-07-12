@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- TODO: Use RecyclerView to show list items -->
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Text.SectionTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing2x"
+        android:layout_marginTop="@dimen/spacing3x"
+        android:text="@string/transactionsPage__balanceOverview_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/carriedOverContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing1x"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        >
+
+        <TextView
+            android:id="@+id/carriedOverLabelText"
+            style="@style/Text.Label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing2x"
+            android:layout_marginEnd="@dimen/spacing1x"
+            android:text="@string/transactionsPage__balanceOverview__carried_over"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/carriedOverCurrencyText"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/carriedOverText"
+            style="@style/Text.Label.Strong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing2x"
+            android:gravity="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="@id/carriedOverLabelText"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent="0.25"
+            tools:text="44,544.40"
+            />
+
+        <TextView
+            android:id="@+id/carriedOverCurrencyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing2x"
+            android:textColor="@color/grey"
+            app:layout_constraintBottom_toBottomOf="@+id/carriedOverText"
+            app:layout_constraintEnd_toStartOf="@id/carriedOverText"
+            app:layout_constraintTop_toTopOf="@id/carriedOverText"
+            tools:text="USD"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/spacing2x"
+            android:layout_marginTop="@dimen/spacing1x"
+            android:background="@color/alto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/carriedOverLabelText"
+            app:layout_constraintVertical_bias="1"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

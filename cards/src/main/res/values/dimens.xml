@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pageIndicatorRadius">4dp</dimen>
+    <dimen name="spacing1x">8dp</dimen>
+    <dimen name="spacing2x">16dp</dimen>
+    <dimen name="spacing3x">24dp</dimen>
+    <dimen name="spacing4x">32dp</dimen>
+</resources>
